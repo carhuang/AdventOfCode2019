@@ -23,15 +23,6 @@ function generatePhaseSettingSequences(settings) {
     return sequences
 }
 
-// function getThrusterSignal(phase_settings) {
-//     // const computer = new IntcodeComputer(software)
-//     for (let setting of phase_settings) {
-//         const loop = new Loop(software, setting)
-//         loop.thrust()
-//     }
-//     return computer.getOutput()
-// }
-
 function getMaxThrusterSignal(settings) {
     const phase_setting_sequences = generatePhaseSettingSequences(settings)
     let max_thruster_signal = 0
